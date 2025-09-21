@@ -8,12 +8,18 @@
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <!-- <link rel="icon" type="image/png" href="images/seal_icon.png"> -->
+  <style>
+    papertitle {
+      font-size: 1.2em;
+    }
+  </style>
 </head>
 
 <body>
-  <table style="width:100%;max-width:850px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
+        <!-- Bio and Photo Section -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
             <td style="padding:2.5%;width:63%;vertical-align:middle">
@@ -22,11 +28,11 @@
               </p>
               <p>
                 Hello! My name is Rasoul and I am a Ph.D. candidate under the supervision of <a href="https://cs.uwaterloo.ca/~fkerschb"> Florian Kerschbaum</a>.
-                I'm also a member of the <a href="https://crysp.uwaterloo.ca/"> Cryptography, Security, and Privacy (CrySP) lab </a> at the <a href="https://uwaterloo.ca/"> University of Waterloo </a>.
+                I'm also a member of the <a href="https://crysp.uwaterloo.ca/"> Cryptography, Security, and Privacy (CrySP) lab </a> at the <a href="https://uwaterloo.ca/"> University of Waterloo</a>.
               </p>
               <p>
                 I hold a Masters degree in Computer Science from the University of Waterloo and a Bachelor of Science in Computer Engineering from Sharif University of Technology.
-                I have previously interned at RBC and am currently a student researcher at Google.
+                I have previously interned at RBC as a Security Scientist and at the Private Computing team at Google as a Student Researcher.
               </p>
               <p style="text-align:center">
                 <a href="mailto:rasoul.akhavan.mahdavi@uwaterloo.ca">Email</a> &nbsp/&nbsp
@@ -35,260 +41,288 @@
                 <a href="https://github.com/RasoulAM/">Github</a>
               </p>
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
+            <td style="padding:2.5%;width:25%;max-width:40%">
               <a href="images/headshot-low-quality-2.jpeg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/headshot-low-quality-2.jpeg" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
-
-        <!-- Research -->
-
+        
+        <!-- Start of two-column layout -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <p>
-                My work primarily focuses on designing efficient secure and private computation protocols, designed for real-world applications.
-                I focus specifically on applications of <strong>Homomorphic Encryption</strong> and <strong> Secure Multi-party Computation</strong>, with a focus on <strong>Private Information Retrieval</strong>.
-                I have also worked on projects on Private-set intersection, and Differential Privacy.
-              </p>
+          <tr>
+            <!-- Left column for main content -->
+            <td style="padding:20px;width:70%;vertical-align:top">
+
+              <!-- Research -->
+              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                  <tr>
+                  <td style="padding:0;width:100%;vertical-align:middle">
+                    <heading>Research</heading>
+                    <p>
+                      My work primarily focuses on designing efficient secure and private computation protocols, designed for real-world applications.
+                      I focus specifically on applications of <strong>Homomorphic Encryption</strong> and <strong> Secure Multi-party Computation</strong>, with a focus on <strong>Private Information Retrieval</strong>.
+                      I have also worked on projects on Private-set intersection, and Differential Privacy.
+                    </p>
+                  </td>
+                </tr>
+              </tbody></table>
+
+              <!-- Publications -->
+              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+                <td style="padding:0;width:100%;vertical-align:middle">
+                  <heading>Publications</heading>
+                </td>
+
+                <tr>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                      <papertitle>  InsPIRe: Communication-Efficient PIR with Silent Preprocessing </papertitle>
+                    <br>
+                      <strong>Rasoul Akhavan Mahdavi</strong>,
+                      Sarvar Patel,
+                      Joon Young Seo,
+                      Kevin Yeo
+                    <br>
+                    <em>47th International IEEE Symposium on Security and Privacy, IEEE S&P 2026</em>
+                    <br>
+                    <!-- <a href="https://www.computer.org/csdl/proceedings-article/sp/2025/223600e068/26hiW14wWek">paper</a> / -->
+                    <a href="https://eprint.iacr.org/2025/1352">eprint</a> /
+                    <a href="https://github.com/google/private-membership/tree/main/research/InsPIRe">code</a>
+                  </td>
+                </tr> 
+
+                <tr>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                      <papertitle> Peer2PIR: Private Queries for IPFS  </papertitle>
+                    <br>
+                      Miti Mazmudar,
+                      Shannon Veitch,
+                      <strong>Rasoul Akhavan Mahdavi</strong>,
+                    <br>
+                    <em>46th International IEEE Symposium on Security and Privacy, IEEE S&P 2025</em>
+                    <br>
+                    <a href="https://www.computer.org/csdl/proceedings-article/sp/2025/223600e068/26hiW14wWek">paper</a> / 
+                    <a href="https://arxiv.org/abs/2405.17307">arXiv</a> /
+                    <a href="https://github.com/dettanym/peer2pir">code</a> /
+                    <a href="data/peer2pir.pdf">poster</a>
+                  </td>
+                </tr> 
+
+                <tr>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                      <papertitle>PEPSI: Practically Efficient Private Set Intersection in the Unbalanced Setting</papertitle>
+                    <br>
+                      <strong>Rasoul Akhavan Mahdavi</strong>,
+                      Nils Lukas, Faezeh Ebrahimianghazani, Thomas Humphries, Bailey Kacsmar,
+                      John Premkumar, Xinda Li, Simon Oya, Ehsan Amjadian, Florian Kerschbaum
+                    <br>
+                    <em>33st USENIX Security Symposium, 2024, Philadelphia, USA</em>
+                    <br>
+                    <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/mahdavi">paper</a>
+                    /
+                    <a href="https://github.com/RasoulAM/pepsi">code</a>
+                  </td>
+                </tr> 
+
+                <tr>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <!-- <a href="http://jonbarron.info/mipnerf360"> -->
+                      <papertitle> Level Up: Private Non-Interactive Decision Tree Evaluation using Levelled Homomorphic Encryption  </papertitle>
+                    <!-- </a> -->
+                    <br>
+                      <strong>Rasoul Akhavan Mahdavi</strong>,
+                      Haoyan Ni,
+                      Dimitry Linkov,
+                      Florian Kerschbaum
+                    <br>
+                    <em>30th ACM Conference on Computer and Communications Security, ACM CCS 2023</em>
+                    <br>
+                    <a href="https://dl.acm.org/doi/abs/10.1145/3576915.3623095">paper</a> / 
+                    <a href="https://arxiv.org/abs/2309.06496">arXiv</a> /
+                    <a href="https://github.com/RasoulAM/private-decision-tree-evaluation/">code</a>
+                  </td>
+                </tr> 
+
+                <tr>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <!-- <a href="http://jonbarron.info/mipnerf360"> -->
+                      <papertitle> Faster Secure Comparisons with Offline Phase for Efficient Private Set Intersection  </papertitle>
+                    <!-- </a> -->
+                    <br>
+                      Florian Kerschbaum,
+                      Erik-Oliver Blass,
+                      <strong>Rasoul Akhavan Mahdavi</strong>
+                    <br>
+                    <em>Network and Distributed System Security Symposium, NDSS 2023</em>
+                    <br>
+                    
+                    <a href="https://www.ndss-symposium.org/ndss-paper/faster-secure-comparisons-with-offline-phase-for-efficient-private-set-intersection/">paper</a> / 
+                    <a href="https://arxiv.org/abs/2209.13913">arXiv</a> /
+                    <a href="https://github.com/BlazingFastPSI/NDSS23">code</a>
+                  </td>
+                </tr> 
+                
+                <tr>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <!-- <a href="http://jonbarron.info/mipnerf360"> -->
+                      <papertitle> Selective MPC: Distributed Computation of Differentially Private Key Value Statistics  </papertitle>
+                    <!-- </a> -->
+                    <br>
+                      Thomas Humphries,
+                      <strong>Rasoul Akhavan Mahdavi</strong>,
+                      Shannon Veitch, 
+                      Florian Kerschbaum
+                    <br>
+                    <em>29th ACM Conference on Computer and Communications Security, ACM CCS 2022</em>
+                    <br>
+                    <a href="https://dl.acm.org/doi/10.1145/3548606.3560559">paper</a> /
+                    <a href="https://arxiv.org/abs/2107.12407">arXiv</a> /
+                    <a href="https://git.uwaterloo.ca/r5akhava/selective-mpc"> code</a>
+                  </td>
+                </tr> 
+
+                <tr>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <!-- <a href="http://jonbarron.info/mipnerf360"> -->
+                      <papertitle>Constant-weight PIR: Single-round Keyword PIR via Constant-weight Equality Operators </papertitle>
+                    <!-- </a> -->
+                    <br>
+                      <strong>Rasoul Akhavan Mahdavi</strong>,
+                      Florian Kerschbaum
+                    <br>
+                    <em>31st USENIX Security Symposium, 2022, Boston, USA</em>
+                    <br>
+                    <a href="https://arxiv.org/abs/2202.07569">paper</a>
+                    /
+                    <a href="https://github.com/RasoulAM/constant-weight-pir">code</a>
+                    /
+                    <a href="data/poster-cwpir.pdf">poster</a>
+                  </td>
+                </tr> 
+
+                <tr>
+                        <td style="padding:20px;width:75%;vertical-align:middle">
+                    <!-- <a href="data/overthresholdPSI.pdf"> -->
+                      <papertitle>Practical Over-Threshold Multi-Party Private Set Intersection</papertitle>
+                    <!-- </a> -->
+                    <br>
+                    <strong>Rasoul Akhavan Mahdavi</strong>,
+                    Thomas Humphries, Bailey Kacsmar,
+                    Simeon Krastnikov, Nils Lukas,
+                    John A. Premkumar, Masoumeh Shafieinejad,
+                    Simon Oya, Florian Kerschbaum, Erik-Oliver Blass
+                    <br>
+                    <em>36th Annual Computer Security Applications Conference, 2020, Online</em>
+                    <br>
+                    <a href="data/overthresholdPSI.pdf">paper</a> / <a href="https://github.com/cryspuwaterloo/OT-MP-PSI">code</a>
+                    <p></p>
+                  </td>
+                </tr>
+              </tbody></table>
+
+              <!-- Select Talks -->
+              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+
+                <td style="padding:0;width:100%;vertical-align:middle">
+                  <heading>Select Talks</heading>
+                </td>
+
+                <tr>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                      JP Morgan, New York, USA, Sept. 19th, 2025 <br>
+                      <a href="https://ontario-crypto-day.github.io/2025-06-06.html">Ontario Crypto Day</a>, Waterloo, Canada, June 6th, 2025 <br>
+                      <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/mahdavi">USENIX Security 2024</a>, Philadelphia, USA, August 14th, 2024 <br>
+                      <a href="https://dl.acm.org/doi/10.1145/3576915.3623095">ACM CCS 2023</a>, Copenhagen, Denmark, November 15th, 2023 <br>
+                  </td>
+                </tr> 
+
+                </tbody>
+              </table>
+
+              <!-- Supervision -->
+              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+
+                <td style="padding:0;width:100%;vertical-align:middle">
+                  <heading>Supervision</heading>
+                </td>
+
+                <tr>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                      Julian Birsan (URA, University of Waterloo, Fall 2025) <br>
+                      Haoyan Ni (URA, University of Waterloo, Fall 2022) <br>
+                      Dimitry Linkov (URA, University of Waterloo, Fall 2021 and Winter 2022) <br>
+                      Roy Stracovsky (URA, University of Waterloo, Winter and Spring 2022) <br>
+                      Sophia Theresa Pietsch (URA, University of Waterloo, Fall 2021) <br>
+                  </td>
+                </tr> 
+
+                </tbody>
+              </table>              
+              
+              <!-- 
+              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+
+                <td style="padding:0;width:100%;vertical-align:middle">
+                  <heading>Posters</heading>
+                </td>
+
+                <tr>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                      <papertitle> Faster Evaluation of AES using TFHE  </papertitle>
+                    <br>
+                      Roy Stracovsky,
+                      <strong>Rasoul Akhavan Mahdavi</strong>,
+                      Florian Kerschbaum
+                      <br>
+                      <em>First annual FHE.org conference, affiliated with Eurocrypt 2022, Trondheim, Norway</em>
+                      <br>   
+                    <a href="data/poster-aes-tfhe.pdf">poster</a>
+                  </td>
+                </tr> 
+
+                <tr>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                      <papertitle> Constant-weight PIR </papertitle>
+                    <br>
+                      <strong>Rasoul Akhavan Mahdavi</strong>,
+                      Florian Kerschbaum
+                      <br>
+                      <em>2022 Cybersecurity and Privacy Institute Annual Conference, Waterloo, Canada</em>
+                      <br>   
+                    <a href="data/poster-cwpir.pdf">poster</a> / <a href="https://uwaterloo.ca/cybersecurity-privacy-institute/2022-cybersecurity-and-privacy-institute-annual-conference#con">link to event</a>            
+                  </td>
+                </tr>        
+                </tbody>
+              </table> -->
+
+            </td>
+
+            <!-- Right column for News -->
+            <td style="padding:20px;width:30%;vertical-align:top">
+              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                  <tr>
+                    <td style="padding:0;width:100%;vertical-align:middle">
+                      <heading>News</heading>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-top:10px;width:100%;vertical-align:middle">
+                        <p><b>Sept 2025:</b> Our <a href="https://eprint.iacr.org/2025/1352">paper</a> has been accepted to IEEE S&P 2026!</p>
+                        <p><b>June 2025:</b> I gave a talk at <a href="https://ontario-crypto-day.github.io/2025-06-06.html">Ontario Crypto Day</a>.</p>
+                        <p><b>May 2025:</b> Our <a href="https://www.computer.org/csdl/proceedings-article/sp/2025/223600e068/26hiW14wWek">paper</a> has been accepted to IEEE S&P 2025!</p>
+                        <p><b>Sept. 2024:</b> I have joined the Private Computing team at Google as a Student Researcher in New York.</p>
+                        <p><b>Aug 2024:</b> I <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/mahdavi">presented</a> our work at USENIX Security 2024 in Philadelphia.</p>
+                        <p><b>March 2024:</b> I passed my PhD candidacy exam.</p>
+                        <p><b>Nov 2023:</b> I presented <a href="https://dl.acm.org/doi/10.1145/3576915.3623095">our work</a> at ACM CCS 2023 in Copenhagen.</p>
+                    </td>
+                  </tr>
+              </tbody></table>
             </td>
           </tr>
         </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-          <!-- <td style="padding:20px;width:100%;vertical-align:middle">
-            <heading>Preprints</heading>
-          </td> -->
-
-          
-          <!-- <tr>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://jonbarron.info/mipnerf360">
-                <papertitle> HE is all you need: Compressing FHE Ciphertexts using Additive HE  </papertitle>
-              </a>
-              <br>
-                <strong>Rasoul Akhavan Mahdavi</strong>,
-                Abdulrahman Diaa,
-                Florian Kerschbaum
-              <br>
-              <em>Network and Distributed System Security Symposium, NDSS 2023</em>
-              <br>
-              <a href="data/he-all-you-need.pdf">arXiv</a>
-            </td>
-          </tr>  -->
-
-
-          <td style="padding:20px;width:100%;vertical-align:middle">
-            <heading>Publications</heading>
-          </td>
-
-          <tr>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-                <papertitle>  InsPIRe: Communication-Efficient PIR with Silent Preprocessing </papertitle>
-              <br>
-                <strong>Rasoul Akhavan Mahdavi</strong>,
-                Sarvar Patel,
-                Joon Young Seo,
-                Kevin Yeo
-              <br>
-              <em>47th International IEEE Symposium on Security and Privacy, IEEE S&P 2026</em>
-              <br>
-              <!-- <a href="https://www.computer.org/csdl/proceedings-article/sp/2025/223600e068/26hiW14wWek">paper</a> /  -->
-              <a href="https://eprint.iacr.org/2025/1352">eprint</a> /
-              <a href="https://github.com/google/private-membership/tree/main/research/InsPIRe">code</a>
-            </td>
-          </tr> 
-
-
-          <tr>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-                <papertitle> Peer2PIR: Private Queries for IPFS  </papertitle>
-              <br>
-                Miti Mazmudar,
-                Shannon Veitch,
-                <strong>Rasoul Akhavan Mahdavi</strong>,
-              <br>
-              <em>46th International IEEE Symposium on Security and Privacy, IEEE S&P 2025</em>
-              <br>
-              <a href="https://www.computer.org/csdl/proceedings-article/sp/2025/223600e068/26hiW14wWek">paper</a> / 
-              <a href="https://arxiv.org/abs/2405.17307">arXiv</a> /
-              <a href="https://github.com/dettanym/peer2pir">code</a>
-            </td>
-          </tr> 
-
-          <tr>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-                <papertitle>PEPSI: Practically Efficient Private Set Intersection in the Unbalanced Setting</papertitle>
-              <br>
-                <strong>Rasoul Akhavan Mahdavi</strong>,
-                Nils Lukas, Faezeh Ebrahimianghazani, Thomas Humphries, Bailey Kacsmar,
-                John Premkumar, Xinda Li, Simon Oya, Ehsan Amjadian, Florian Kerschbaum
-              <br>
-							<em>33st USENIX Security Symposium, 2024, Philadelphia, USA</em>
-              <br>
-              <a href="https://www.usenix.org/conference/usenixsecurity24/presentation/mahdavi">paper</a>
-              /
-              <a href="https://github.com/RasoulAM/pepsi">code</a>
-            </td>
-          </tr> 
-
-          <tr>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- <a href="http://jonbarron.info/mipnerf360"> -->
-                <papertitle> Level Up: Private Non-Interactive Decision Tree Evaluation using Levelled Homomorphic Encryption  </papertitle>
-              <!-- </a> -->
-              <br>
-                <strong>Rasoul Akhavan Mahdavi</strong>,
-                Haoyan Ni,
-                Dimitry Linkov,
-                Florian Kerschbaum
-              <br>
-              <em>30th ACM Conference on Computer and Communications Security, ACM CCS 2023</em>
-              <br>
-              <a href="https://dl.acm.org/doi/abs/10.1145/3576915.3623095">paper</a> / 
-              <a href="https://arxiv.org/abs/2309.06496">arXiv</a> /
-              <a href="https://github.com/RasoulAM/private-decision-tree-evaluation/">code</a>
-            </td>
-          </tr> 
-
-          <tr>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- <a href="http://jonbarron.info/mipnerf360"> -->
-                <papertitle> Faster Secure Comparisons with Offline Phase for Efficient Private Set Intersection  </papertitle>
-              <!-- </a> -->
-              <br>
-                Florian Kerschbaum,
-                Erik-Oliver Blass,
-                <strong>Rasoul Akhavan Mahdavi</strong>
-              <br>
-              <em>Network and Distributed System Security Symposium, NDSS 2023</em>
-              <br>
-              
-              <a href="https://www.ndss-symposium.org/ndss-paper/faster-secure-comparisons-with-offline-phase-for-efficient-private-set-intersection/">paper</a> / 
-              <a href="https://arxiv.org/abs/2209.13913">arXiv</a> /
-              <a href="https://github.com/BlazingFastPSI/NDSS23">code</a>
-            </td>
-          </tr> 
-          
-          <tr>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- <a href="http://jonbarron.info/mipnerf360"> -->
-                <papertitle> Selective MPC: Distributed Computation of Differentially Private Key Value Statistics  </papertitle>
-              <!-- </a> -->
-              <br>
-                Thomas Humphries,
-                <strong>Rasoul Akhavan Mahdavi</strong>,
-                Shannon Veitch, 
-                Florian Kerschbaum
-              <br>
-              <em>29th ACM Conference on Computer and Communications Security, ACM CCS 2022</em>
-              <br>
-              <a href="https://dl.acm.org/doi/10.1145/3548606.3560559">paper</a> /
-              <a href="https://arxiv.org/abs/2107.12407">arXiv</a> /
-              <a href="https://git.uwaterloo.ca/r5akhava/selective-mpc"> code</a>
-            </td>
-          </tr> 
-
-          <tr>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- <a href="http://jonbarron.info/mipnerf360"> -->
-                <papertitle>Constant-weight PIR: Single-round Keyword PIR via Constant-weight Equality Operators </papertitle>
-              <!-- </a> -->
-              <br>
-                <strong>Rasoul Akhavan Mahdavi</strong>,
-                Florian Kerschbaum
-              <br>
-							<em>31st USENIX Security Symposium, 2022, Boston, USA</em>
-              <br>
-              <!-- <a href="http://jonbarron.info/mipnerf360">project page</a> -->
-              <!-- / -->
-              <a href="https://arxiv.org/abs/2202.07569">paper</a>
-              /
-              <a href="https://github.com/RasoulAM/constant-weight-pir">code</a>
-              <!-- <p></p> -->
-              <!-- <p>mip-NeRF can be extended to produce realistic results on unbounded scenes.</p> -->
-            </td>
-          </tr> 
-
-          <tr>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- <a href="data/overthresholdPSI.pdf"> -->
-                <papertitle>Practical Over-Threshold Multi-Party Private Set Intersection</papertitle>
-              <!-- </a> -->
-              <br>
-              <strong>Rasoul Akhavan Mahdavi</strong>,
-              Thomas Humphries, Bailey Kacsmar,
-              Simeon Krastnikov, Nils Lukas,
-              John A. Premkumar, Masoumeh Shafieinejad,
-              Simon Oya, Florian Kerschbaum, Erik-Oliver Blass
-              <br>
-              <em>36th Annual Computer Security Applications Conference, 2020, Online</em>
-              <br>
-              <a href="data/overthresholdPSI.pdf">paper</a> / <a href="https://github.com/cryspuwaterloo/OT-MP-PSI">code</a>
-              <p></p>
-            </td>
-          </tr>
-
-					
-        </tbody>
-      </table>
-      
-      <!-- End of Publications -->
-
-      <!-- Posters -->
-      
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-
-        <td style="padding:20px;width:100%;vertical-align:middle">
-          <heading>Posters</heading>
-        </td>
-
-        <tr>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle> Faster Evaluation of AES using TFHE  </papertitle>
-            <br>
-              Roy Stracovsky,
-              <strong>Rasoul Akhavan Mahdavi</strong>,
-              Florian Kerschbaum
-              <br>
-              <em>First annual FHE.org conference, affiliated with Eurocrypt 2022, Trondheim, Norway</em>
-              <br>    
-            <a href="data/poster-aes-tfhe.pdf">poster</a>
-          </td>
-        </tr> 
-
-        <tr>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle> Constant-weight PIR </papertitle>
-            <br>
-              <strong>Rasoul Akhavan Mahdavi</strong>,
-              Florian Kerschbaum
-              <br>
-              <em>2022 Cybersecurity and Privacy Institute Annual Conference, Waterloo, Canada</em>
-              <br>    
-            <a href="data/poster-cwpir.pdf">poster</a> / <a href="https://uwaterloo.ca/cybersecurity-privacy-institute/2022-cybersecurity-and-privacy-institute-annual-conference#con">link to event</a>           
-          </td>
-        </tr>         
-        
-        </tbody>
-      </table>
-
-
-          <!-- Preprints -->
-      
-        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Preprints</heading>
-            </td>
-            
-          </tbody>
-        </table> -->
-
-
       </td>
     </tr>
   </table>
